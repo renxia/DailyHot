@@ -12,7 +12,7 @@
       >
         {{ item.label }}
         <template #avatar>
-          <img :src="`/logo/${item.name}.png`" alt="logo" class="logo" />
+          <img :src="`./logo/${item.name}.png`" alt="logo" class="logo" />
         </template>
       </n-tag>
     </n-space>
@@ -27,7 +27,7 @@
           <template v-else>
             <div class="header">
               <div class="logo">
-                <img :src="`/logo/${listType}.png`" alt="logo" />
+                <img :src="`./logo/${listType}.png`" alt="logo" />
               </div>
               <div class="name">
                 <n-text class="title">{{ listData.title }}</n-text>

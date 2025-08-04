@@ -60,7 +60,7 @@ export default defineConfig(({ mode }) => {
           background_color: "#efefef",
           icons: [
             {
-              src: "/ico/favicon.png",
+              src: "./ico/favicon.png",
               sizes: "200x200",
               type: "image/png",
             },
@@ -78,6 +78,7 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       minify: "terser",
+      outDir: 'dist/DailyHot',
       terserOptions: {
         compress: {
           pure_funcs: ["console.log"],
